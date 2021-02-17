@@ -1,0 +1,7 @@
+name = "juanito87"
+type = "webpack"
+account_id = "${{ secrets.CF_ACCOUNT_ID }}"
+workers_dev = false
+route = "blog.juanito87.com.ar/*"
+zone_id = "${{ secrets.CF_ZONE_ID }}"
+site = { bucket = "./public" }

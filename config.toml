@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "blog.juanito87.com.ar"
 languageCode = "en-us"
 title = "La Vida, el universo y todo lo demás"
 theme = "terminal"
