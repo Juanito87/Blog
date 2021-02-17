@@ -27,8 +27,8 @@ jobs:
           hugo-version: 'latest'
       
       # Build the site
-        - name: Build site
-          run: hugo --minify --gc
+      - name: Build site
+        run: hugo --minify --gc
         
       # Publish to cloudflare workers
       - name: Publish to cloudflare
