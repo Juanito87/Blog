@@ -2,7 +2,7 @@
 
 name: Deploy to cloudflare
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
@@ -23,15 +23,17 @@ jobs:
       # Setup latest hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
-        with: 
+        with:
           hugo-version: 'latest'
-      
+
       # Build the site
       - name: Build site
-        run: hugo --minify --gc
-        
+        run: hugo
+
       # Publish to cloudflare workers
       - name: Publish to cloudflare
         uses: cloudflare/wrangler-action@1.3.0
-        with: 
+        env:
+            USER: root
+        with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
