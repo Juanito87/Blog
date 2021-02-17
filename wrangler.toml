@@ -6,5 +6,5 @@ route = "blog.juanito87.com.ar/*"
 zone_id = "${{ secrets.CF_ZONE_ID }}"
 
 [site]
-bucket = "public"
+bucket = "./public"
 entry-point = "workers-site"
