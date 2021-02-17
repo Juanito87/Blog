@@ -1,10 +1,10 @@
 name = "blog"
 type = "webpack"
 account_id = "${{ secrets.CF_ACCOUNT_ID }}"
-workers_dev = true
+workers_dev = false
 route = "blog.juanito87.com.ar/*"
 zone_id = "${{ secrets.CF_ZONE_ID }}"
 
 [site]
-bucket = "./public"
+bucket = "public"
 entry-point = "workers-site"
