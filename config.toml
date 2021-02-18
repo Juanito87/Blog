@@ -1,4 +1,4 @@
-baseURL = ""
+baseURL = "/"
 languageCode = "en-us"
 title = "La Vida, el universo y todo lo demás"
 theme = "terminal"
