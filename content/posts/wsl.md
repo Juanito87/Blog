@@ -22,12 +22,14 @@ Se debe corroborar antes de iniciar el proceso:
 
 La instalación se realiza en dos etapas. Primero tenemos que habilitar el subsistema de linux en nuestro windows, lo podemos hacer por cli o gui.
 
-*cli*
+**cli**
+
 `dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart`
 
 *Nota:* para instalar por cli el comando debe ejecutarse en powershell como administrador.
 
-*gui*
+**gui**
+
 Control panel > Programs and features > Turn windows features on or off
 
 Una vez seleccionada la opción, esperamos a que active los componentes, y nos solicitará reiniciar el equipo.
