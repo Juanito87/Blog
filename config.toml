@@ -21,7 +21,7 @@ showLanguageSelector = false
 fullWidthTheme = false
 
 # center theme with default width
-centerTheme = false
+centerTheme = true
 
 # set a custom favicon (default is a `themeColor` square)
 # favicon = "favicon.ico"
@@ -40,23 +40,22 @@ showLastUpdated = false
 # set Twitter handles for Twitter cards
 # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
 # do not include @
-creator = ""
-site = ""
+#creator = ""
+#site = ""
 
 [languages]
 [languages.en]
-languageName = "English"
-title = "La Vida, el universo y todo lo demás"
-#title = "Terminal"
-#subtitle = "A simple, retro theme for Hugo"
-owner = ""
-keywords = ""
+languageName = "Español"
+title = "El blog de Juanito"
+#subtitle = "La Vida, el universo y todo lo demás"
+owner = "Juanito"
+keywords = "#blog, #linux, #vim, #tmux"
 copyright = ""
-menuMore = "Show more"
-readMore = "Read more"
-readOtherPosts = "Read other posts"
-missingContentMessage = "Page not found..."
-missingBackButtonLabel = "Back to home page"
+menuMore = "Mostrar más"
+readMore = "Leer más"
+readOtherPosts = "Leer otros posteos"
+missingContentMessage = "Esta no es la página que estás buscando"
+missingBackButtonLabel = "Volver"
 
 [languages.en.params.logo]
 logoText = "La Vida, el universo y todo lo demás"
@@ -64,6 +63,6 @@ logoHomeLink = "/"
 
 [languages.en.menu]
 [[languages.en.menu.main]]
-identifier = "about"
-name = "About"
+identifier = "Acerca de"
+name = "Acerca de"
 url = "/about"

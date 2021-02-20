@@ -173,6 +173,6 @@ Como bonus, pueden agregar a su configuración lo siguiente, para que el alias g
 ```
 if [ -f "/usr/share/bash-completion/completions/git" ]; then
       . /usr/share/bash-completion/completions/git
-      fi
-      __git_complete gitdot __git_main
+fi
+__git_complete gitdot __git_main
 ```
