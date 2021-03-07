@@ -5,40 +5,43 @@ title = "La Vida, el universo y todo lo demás"
 theme = "terminal"
 paginate = 5
 
-[params]
-# dir name of your main content (default is `content/posts`).
-# the list of set content will show up on your index page (baseurl).
-contentTypeName = "posts"
-
 # SEO
 enableRobotsTXT = true
 canonifyURLs = true
+disableSitemap = false
+
 [sitemap]
-changefreq = "monthly"
-filename = "sitemap.xml"
-priority = 0.5
+    changefreq = "monthly"
+    filename = "sitemap.xml"
+    priority = 0.5
+
+[params]
+# dir name of your main content (default is `content/posts`).
+# the list of set content will show up on your index page (baseurl).
+    contentTypeName = "posts"
+
 
 # ["orange", "blue", "red", "green", "pink"]
-themeColor = "pink"
+    themeColor = "pink"
 
 # if you set this to 0, only submenu trigger will be visible
-showMenuItems = 2
+    showMenuItems = 2
 
 # show selector to switch language
-showLanguageSelector = false
+    showLanguageSelector = false
 
 # set theme to full screen width
-fullWidthTheme = false
+    fullWidthTheme = false
 
 # center theme with default width
-centerTheme = true
+    centerTheme = true
 
 # set a custom favicon (default is a `themeColor` square)
 # favicon = "favicon.ico"
 
 # set post to show the last updated
 # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
-showLastUpdated = false
+    showLastUpdated = false
 # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
 # updatedDatePrefix = "Updated"
 
@@ -46,33 +49,26 @@ showLastUpdated = false
 # it's set to `true` by default
 # oneHeadingSize = false
 
-[params.twitter]
-# set Twitter handles for Twitter cards
-# see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
-# do not include @
-#creator = ""
-#site = ""
-
 [languages]
-[languages.es]
-languageName = "Español"
-title = "El blog de Juanito"
-#subtitle = "La Vida, el universo y todo lo demás"
-owner = "Juanito"
-keywords = "#blog, #linux, #vim, #tmux, #terminal, #español"
-copyright = ""
-menuMore = "Mostrar más"
-readMore = "Leer más"
-readOtherPosts = "Leer otros posteos"
-missingContentMessage = "Esta no es la página que estás buscando"
-missingBackButtonLabel = "Volver"
+    [languages.es]
+        languageName = "Español"
+        title = "El blog de Juanito"
+        #subtitle = "La Vida, el universo y todo lo demás"
+        owner = "Juanito"
+        keywords = "#blog, #linux, #vim, #tmux, #terminal, #español"
+        copyright = ""
+        menuMore = "Mostrar más"
+        readMore = "Leer más"
+        readOtherPosts = "Leer otros posteos"
+        missingContentMessage = "Esta no es la página que estás buscando"
+        missingBackButtonLabel = "Volver"
 
-[languages.es.params.logo]
-logoText = "La Vida, el universo y todo lo demás"
-logoHomeLink = "/"
+    [languages.es.params.logo]
+        logoText = "La Vida, el universo y todo lo demás"
+        logoHomeLink = "/"
 
-[languages.es.menu]
-[[languages.es.menu.main]]
-identifier = "Acerca de"
-name = "Acerca de"
-url = "/about"
+    [languages.es.menu]
+        [[languages.es.menu.main]]
+            identifier = "Acerca de"
+            name = "Acerca de"
+            url = "/about"
