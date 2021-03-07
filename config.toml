@@ -1,12 +1,22 @@
 baseURL = "/"
-languageCode = "en-us"
+languageCode = "es-ar"
+defaultContentLanguage = "es"
 title = "La Vida, el universo y todo lo demás"
 theme = "terminal"
 paginate = 5
+
 [params]
 # dir name of your main content (default is `content/posts`).
 # the list of set content will show up on your index page (baseurl).
 contentTypeName = "posts"
+
+# SEO
+enableRobotsTXT = true
+canonifyURLs = true
+[sitemap]
+changefreq = "monthly"
+filename = "sitemap.xml"
+priority = 0.5
 
 # ["orange", "blue", "red", "green", "pink"]
 themeColor = "pink"
@@ -44,12 +54,12 @@ showLastUpdated = false
 #site = ""
 
 [languages]
-[languages.en]
+[languages.es]
 languageName = "Español"
 title = "El blog de Juanito"
 #subtitle = "La Vida, el universo y todo lo demás"
 owner = "Juanito"
-keywords = "#blog, #linux, #vim, #tmux"
+keywords = "#blog, #linux, #vim, #tmux, #terminal, #español"
 copyright = ""
 menuMore = "Mostrar más"
 readMore = "Leer más"
@@ -57,12 +67,12 @@ readOtherPosts = "Leer otros posteos"
 missingContentMessage = "Esta no es la página que estás buscando"
 missingBackButtonLabel = "Volver"
 
-[languages.en.params.logo]
+[languages.es.params.logo]
 logoText = "La Vida, el universo y todo lo demás"
 logoHomeLink = "/"
 
-[languages.en.menu]
-[[languages.en.menu.main]]
+[languages.es.menu]
+[[languages.es.menu.main]]
 identifier = "Acerca de"
 name = "Acerca de"
 url = "/about"

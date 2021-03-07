@@ -2,6 +2,7 @@
 title: "Manejo de Dotfiles"
 date: 2021-02-16T09:15:18-03:00
 draft: false
+tags: ['dotfiles', 'linux', 'git']
 ---
 
 # Dotfiles

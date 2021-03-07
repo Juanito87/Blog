@@ -2,6 +2,7 @@
 title: "Como instalar Wsl"
 date: 2021-02-18T22:35:14-03:00
 draft: false
+tags: ['wsl', 'linux', 'windows', 'git']
 ---
 
 # Qué es WSL
