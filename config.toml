@@ -1,9 +1,14 @@
-baseURL = "http://blog.juanito87.com.ar/"
+# Base config
+baseURL = "https://blog.juanito87.com.ar/"
 languageCode = "es-ar"
 defaultContentLanguage = "es"
 title = "La Vida, el universo y todo lo demás"
 theme = "terminal"
 paginate = 5
+
+# Taxonomies
+[taxonomies]
+  tag = "tags"
 
 # SEO
 enableRobotsTXT = true
