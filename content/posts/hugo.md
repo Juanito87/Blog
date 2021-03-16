@@ -2,6 +2,7 @@
 title: "Sitios estáticos con hugo"
 date: 2021-03-15T22:19:53-03:00
 draft: false
+tags: ['hosting', 'hugo', 'gratis', 'automatización']
 ---
 # Cómo hostear un sitio web de manera gratuita y sencilla?
 
