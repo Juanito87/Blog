@@ -44,6 +44,37 @@ Esto nos va a permitir:
 La otra herramienta que podemos utilizar son los submódulos de git.
 De esta manera, podemos tener repositorios adentro del repositorio, lo cual nos otorga más flexibilidad y modularidad para mantener el repositorio, incluyendo repositorios de otras personas dentro de nuestro repo.
 
+# Como estructurar los archivos de configuración
+
+La idea de gestionar los archivos de configuración usando git y submódulos, es que la configuración sea más sencilla de segmentar.
+Al estar segmentada es más fácil mantener y encontrar la configuración que estamos buscando.
+En mi caso mi estructura es:
+
+ * dotfiles que llaman repos
+    * repo con configuración de app como submódulo
+         * plugins para la app como submódulos
+
+Al usar está estructura mi home solo tiene archivos con pocas líneas que llaman al archivo que consolida la configuración de todo el repo. Por ejemplo, mi .bashrc:
+
+```
+##!/bin/bash
+## shellcheck disable=1090
+source ~/.shell_config/bash/bashrc
+```
+
+El archivo llamado arriba se encarga de cargar:
+
+* Alias
+* Configuraciones de comandos
+* Comandos personalizados
+* Variables de entorno
+* Configuración del prompt
+* Etc
+
+Esto se puede hacer con todas las aplicaciones. Teniendo una configuración más segmentada, facilitando encontrar la configuración especifica que buscamos.
+Esto también ayuda a que sea más difícil romper la configuración, y más sencillo debbugearla.
+Otro beneficio de está segmentación es la facilidad de reutilizar código si usamos más de una terminali (bash, zsh, etc), o queremos migrar entre ellas.
+
 # Y cómo hacemos?
 
 El proceso es bastante sencillo. Con git ya instalado iniciamos el repositorio ejecutando:
@@ -84,7 +115,7 @@ gitdot push origin master
 
 De esta manera ya queda el flujo de trabajo armado. Solo queda persistir el alias, eso va a depender de tu configuración.
 
-## Expoprtar el repositorio
+## Exportar el repositorio
 
 Una vez creado el repositorio, podemos clonarlo desde cualquier equipo en el lo deseemos.
 Para eso debemos:
@@ -133,7 +164,7 @@ Antes de realizar un commit, deberíamos validar que el cambio funciona.
 Si no lo hace, con el siguiente comando podemos revertir el cambio a la última versión commiteada.
 `gitdot reset ruta/archivo`
 
-*Recuperar un archivo versionado que booramos*
+*Recuperar un archivo versionado que borramos*
 `gitdot restore archivo`
 
 *Persistir cambios al repo*
