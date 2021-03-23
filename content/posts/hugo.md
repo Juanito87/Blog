@@ -17,6 +17,20 @@ Utilizaremos las siguientes herramientas:
 # Hugo
 
 Con este software podemos crear sitios estáticos, que luego podemos publicar a cloudflare o github pages.
+Para esto debemos iniciar el sitio y crear el repositorio con  los siguientes pasos:
+
+```
+hugo new site nombre-sitio
+cd nombre-sitio
+git init
+git remote add git-repo
+git add .
+git commit -m "Mensaje"
+git push
+```
+
+**Nota:** se debe tener un repositorio vació en github para poder realizarlo de está manera
+
 Para poder realizar las gestiones en principio hay que definir:
 
 - El tema a utilizar
