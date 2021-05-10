@@ -51,8 +51,8 @@ Al estar segmentada es más fácil mantener y encontrar la configuración que es
 En mi caso mi estructura es:
 
  * dotfiles que llaman repos
-    * repo con configuración de app como submódulo
-         * plugins para la app como submódulos
+    - repo con configuración de app como submódulo
+    - plugins para la app como submódulos
 
 Al usar está estructura mi home solo tiene archivos con pocas líneas que llaman al archivo que consolida la configuración de todo el repo. Por ejemplo, mi .bashrc:
 
@@ -72,8 +72,8 @@ El archivo llamado arriba se encarga de cargar:
 * Etc
 
 Esto se puede hacer con todas las aplicaciones. Teniendo una configuración más segmentada, facilitando encontrar la configuración especifica que buscamos.
-Esto también ayuda a que sea más difícil romper la configuración, y más sencillo debbugearla.
-Otro beneficio de está segmentación es la facilidad de reutilizar código si usamos más de una terminali (bash, zsh, etc), o queremos migrar entre ellas.
+Esto también ayuda a que sea más difícil romper la configuración, y más sencillo debugearla.
+Otro beneficio de está segmentación es la facilidad de reutilizar código si usamos más de una terminal (bash, zsh, etc), o queremos migrar entre ellas.
 
 # Y cómo hacemos?
 
